@@ -132,6 +132,13 @@ defmodule Acl.UserGroups.Config do
                         "http://mu.semte.ch/vocabularies/ext/PublishingLog",
                         "http://mu.semte.ch/vocabularies/ext/Installatievergadering",
                         "http://mu.semte.ch/vocabularies/ext/InstallatievergaderingSynchronizationStatus",
+
+                        # Hackathon
+                        "http://dbpedia.org/resource/Case",
+                        "https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit",
+                        "https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag",
+                        "http://www.opengis.net/ont/geosparql#Feature",
+                        "http://www.w3.org/2006/time#Interval"
                       ] } } ] },
 
       %GroupSpec{
@@ -169,6 +176,13 @@ defmodule Acl.UserGroups.Config do
                         "http://mu.semte.ch/vocabularies/ext/PublishingLog",
                         "http://mu.semte.ch/vocabularies/ext/Installatievergadering",
                         "http://mu.semte.ch/vocabularies/ext/InstallatievergaderingSynchronizationStatus",
+
+                        # Hackathon
+                        "http://dbpedia.org/resource/Case",
+                        "https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit",
+                        "https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag",
+                        "http://www.opengis.net/ont/geosparql#Feature",
+                        "http://www.w3.org/2006/time#Interval"
                       ] } } ] },
 
       %GroupSpec{

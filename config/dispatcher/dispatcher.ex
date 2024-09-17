@@ -302,6 +302,7 @@ defmodule Dispatcher do
   match "/agenda-positions/*path" do
     forward conn, path, "http://resource/agenda-positions/"
   end
+  
   #######
   # Tasks
   #######
@@ -347,8 +348,38 @@ defmodule Dispatcher do
   match "/vendor-proxy/*path" do
     forward conn, path, "http://vendor-proxy/"
   end
+
+
+  ###################
+  # Hackathon
+  ###################
+  match "/cases/*path" do
+    forward conn, path, "http://resource/cases/"
+  end
+
+  match "/events/*path" do
+    forward conn, path, "http://resource/events/"
+  end
+
+  match "/submissions/*path" do
+    forward conn, path, "http://resource/submissions/"
+  end
+
+  match "/identificatoren/*path" do
+    forward conn, path, "http://resource/identificatoren/"
+  end
   
-  
+  match "/locations/*path" do
+    forward conn, path, "http://resource/locations/"
+  end
+
+  match "/timeframes/*path" do
+    forward conn, path, "http://resource/timeframes/"
+  end
+
+  match "/organizations/*path" do
+    forward conn, path, "http://resource/organizations/"
+  end
 
   #########
   # LPDC

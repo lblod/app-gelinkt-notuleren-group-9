@@ -10,6 +10,9 @@
 (defparameter *max-group-sorted-properties* nil)
 (setf sparql:*experimental-no-application-graph-for-sudo-select-queries* t)
 
+
+(read-domain-file "permits.json")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; COMMON MODELS ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1242,4 +1245,14 @@
   :resource-base (s-url "http://data.lblod.info/id/status-codes/")
   :features `(include-uri)
   :on-path "status-codes"
+)
+
+(define-resource organization ()
+  :class (s-prefix "org:Organization")
+  :properties `((:name :string ,(s-prefix "skos:prefLabel")))
+  :has-many `((user :via ,(s-prefix "foaf:member")
+                :as "members"))
+  :resource-base (s-url "http://data.lblod.info/id/organisations/")
+  :features '(include-uri)
+  :on-path "organizations"
 )
