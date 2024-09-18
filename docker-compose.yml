@@ -252,5 +252,5 @@ services:
       - "logging=true"
 
   aanvragen-sync:
-    image: lblod/aanvragen-sync-service-group-9:0.1.0
+    image: lblod/aanvragen-sync-service-group-9:0.2.0
     restart: always
