@@ -93,9 +93,9 @@
           "target": "bestuurseenheid",
           "cardinality": "one"
         },
-        "editor-document": {
-          "predicate": "ext:editorDocument",
-          "target": "editor-document",
+        "document-container": {
+          "predicate": "ext:documentContainer",
+          "target": "document-container",
           "cardinality": "one"
         }
       },

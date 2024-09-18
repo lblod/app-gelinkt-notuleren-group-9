@@ -164,7 +164,10 @@
               (attachment :via ,(s-prefix "ext:hasAttachments")
                           :as "attachments")
               (editor-document :via ,(s-prefix "dct:isPartOf")
-                  :as "is-part-of"))
+                  :as "is-part-of")
+              (submission :via ,(s-prefix "ext:documentContainer")
+                          :inverse t
+                          :as "submissions"))
   :resource-base (s-url "http://data.lblod.info/document-containers/")
   :features `(include-uri)
   :on-path "document-containers"
