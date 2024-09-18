@@ -252,7 +252,7 @@ services:
       - "logging=true"
 
   aanvragen-sync:
-    image: lblod/aanvragen-sync-service-group-9:0.4.0
+    image: lblod/aanvragen-sync-service-group-9:0.5.0
     restart: always
     environment:
       LOG_SPARQL_ALL: true
